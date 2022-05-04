@@ -29,6 +29,7 @@ Route::get('/', function () {
 
 
 Route::get('/characters', function () {
-    return view('characters');
+    $nav_links = config("header_nav");
+    return view('characters',["links" => $nav_links]);
 })->name("characters");
 

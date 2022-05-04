@@ -5,6 +5,11 @@
     </div>
     <div class="my-header-nav">
         <ul class="d-flex my-link-list">
+            <li class="my-link-item">
+                <a class="header-link" href="{{@url("/")}}">
+                    Home
+                </a>
+            </li>
             @foreach($links as $link_item)
                 @if ($loop->first)
                     <li class="my-link-item">
