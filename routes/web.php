@@ -20,5 +20,9 @@ Route::get('/', function () {
 
     $comics_cards = config("comics");
     $cards = ["comics" => $comics_cards];
-    return view('app',$header_nav_links,$cards);
+
+    $main_logos_dc = config("logos_dc");
+    $dc_logos = ["logos" => $main_logos_dc];
+
+    return view('app',$header_nav_links,$cards,$dc_logos);
 });

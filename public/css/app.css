@@ -177,3 +177,39 @@ a {
   text-align: center;
 }
 
+/* //# MAIN LOGOS LIST */
+
+.my-main-content-menu {
+  background-color: rgb(2, 130, 249);
+  height: 150px;
+}
+
+.my-main-content-menu .my-main-nav {
+  padding-top: 3rem;
+}
+
+.my-link-list {
+  list-style-type: none;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.my-link-list .my-link-item {
+  height: 50px;
+  width: calc(20% - 1rem);
+  border-bottom: transparent;
+}
+
+.my-link-list .my-link-item img {
+  margin-right: 1rem;
+  widows: 50%;
+}
+
+.my-link-list .my-link-item .my-link-text-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
