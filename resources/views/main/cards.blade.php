@@ -3,6 +3,7 @@
     <div class="box-current-series">
         <h4>Current Series</h4>
     </div>
+    
     <div class="main-content-cards ">
         @foreach($comics as $comic)
             <div class="main-card">
