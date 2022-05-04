@@ -1,7 +1,7 @@
 <div class="my-main-wrapper position-relative">
 
     <div class="box-current-series">
-        <h4>Current Series</h4>
+        <h4 class="box-title">Current Series</h4>
     </div>
     
     <div class="main-content-cards ">

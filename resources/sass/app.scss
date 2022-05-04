@@ -1,12 +1,5 @@
 //
-/* commmon app */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* //% commmon app */
 body{
     min-width: 1200px;
 }
@@ -31,12 +24,12 @@ a{
     text-decoration: none;
 }
 
-/* //# header */
+/* //% header */
+
 .my-header-content{
     justify-content: space-between;
-    padding-top:1rem;
-    padding-bottom:1rem;
-
+    padding-top:1.3rem;
+    padding-bottom:1.3rem;
 }
 
 .my-header-nav{
@@ -48,7 +41,7 @@ a{
 
         .my-link-item{
             padding:.5rem 1rem;
-            a{
+            .header-link{
                 text-decoration: none;
                 color:black;
                 text-transform: uppercase;
@@ -59,18 +52,20 @@ a{
                 
             }
 
-            a:hover{
+            .header-link:hover{
                 border-bottom:5px solid rgb(2, 130, 249);
             }
         }
     }
 }
 
+/* //% ---------------- MAIN ------------------- */
+
 /* //# JUMB0 */
 .my-jumbo{
     height: 400px;
 
-    img{
+    .jumbo-img{
         height: 100%;
         width:100%;
         object-fit: cover;
@@ -94,6 +89,7 @@ a{
         flex-wrap: wrap;
         gap: 1rem 2rem;
         background-color: black;
+        
         .main-card{
             height: 250px;
             width: calc(100% / 6 - 2rem);
@@ -141,12 +137,14 @@ a{
         position: absolute;
         top: -1rem;
         left: 5rem;
-        h4{
+
+        .box-title{
             color: white;
             text-transform: uppercase;
             font-weight: 700;
             text-align: center;
             line-height:25px;
+            font-size: 1rem;
         }
     }
 }
@@ -209,10 +207,13 @@ a{
     }
 }
 
+
+/* //% +++++++++++++++++++++  FOOTER ++++++++++++++++++++++*/
+
 /* //# FOOTER NAV */
 .my-footer-wrap{
     background-image: url("/img/footer-bg.jpg");
-    height: 350px;
+    height: 400px;
 }
 
 .my-footer-nav{

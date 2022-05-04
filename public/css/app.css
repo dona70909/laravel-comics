@@ -1,10 +1,4 @@
-/* commmon app */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* //% commmon app */
 
 body {
   min-width: 1200px;
@@ -30,12 +24,12 @@ a {
   text-decoration: none;
 }
 
-/* //# header */
+/* //% header */
 
 .my-header-content {
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
 
 .my-header-nav {
@@ -51,7 +45,7 @@ a {
   padding: 0.5rem 1rem;
 }
 
-.my-header-nav .my-link-list .my-link-item a {
+.my-header-nav .my-link-list .my-link-item .header-link {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -61,9 +55,11 @@ a {
   padding-bottom: 48px;
 }
 
-.my-header-nav .my-link-list .my-link-item a:hover {
+.my-header-nav .my-link-list .my-link-item .header-link:hover {
   border-bottom: 5px solid rgb(2, 130, 249);
 }
+
+/* //% ---------------- MAIN ------------------- */
 
 /* //# JUMB0 */
 
@@ -71,7 +67,7 @@ a {
   height: 400px;
 }
 
-.my-jumbo img {
+.my-jumbo .jumbo-img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -146,12 +142,13 @@ a {
   left: 5rem;
 }
 
-.my-main-wrapper .box-current-series h4 {
+.my-main-wrapper .box-current-series .box-title {
   color: white;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   line-height: 25px;
+  font-size: 1rem;
 }
 
 /* //# CARD */
@@ -211,11 +208,13 @@ a {
   color: white;
 }
 
+/* //% +++++++++++++++++++++  FOOTER ++++++++++++++++++++++*/
+
 /* //# FOOTER NAV */
 
 .my-footer-wrap {
   background-image: url("/img/footer-bg.jpg");
-  height: 350px;
+  height: 400px;
 }
 
 .my-footer-nav {
