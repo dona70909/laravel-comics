@@ -11,6 +11,7 @@
 .my-header-nav .my-link-list {
   list-style-type: none;
   margin: 0;
+  /* display: flex; */
 }
 
 .my-header-nav .my-link-list .my-link-item {
