@@ -1,4 +1,5 @@
 <?php
+
     return [
         [
             "text" => "Digital Comics",

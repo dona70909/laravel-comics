@@ -22,7 +22,5 @@ Route::get('/', function () {
     $cards = ["comics" => $comics_cards];
 
     $main_logos_dc = config("logos_dc");
-    $dc_logos = ["logos" => $main_logos_dc];
-
-    return view('app',$header_nav_links,$cards,$dc_logos);
+    return view('app',$header_nav_links,$cards,["logos_dc_main" => $main_logos_dc]);
 });
