@@ -1,1 +1,34 @@
 //
+.my-header-content{
+    justify-content: space-between;
+    padding-top:1rem;
+    padding-bottom:1rem;
+
+}
+
+.my-header-nav{
+    line-height: 106.5px;
+
+    .my-link-list{
+        list-style-type:none;
+        margin: 0;
+
+        .my-link-item{
+            padding:.5rem 1rem;
+            a{
+                text-decoration: none;
+                color:black;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: .8rem;
+                border-bottom:5px solid transparent;
+                padding-bottom: 48px;
+                
+            }
+
+            a:hover{
+                border-bottom:5px solid rgb(2, 130, 249);
+            }
+        }
+    }
+}
