@@ -22,5 +22,7 @@ Route::get('/', function () {
     $main_logos_dc = config("logos_dc");
 
     $footer_nav_links = config("footer_nav");
-    return view('app', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc, "nav_links" => $footer_nav_links ]);
+
+    $footer_social = config("social_nav");
+    return view('app', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc, "nav_links" => $footer_nav_links,"footer_social_imgs" => $footer_social]);
 });
