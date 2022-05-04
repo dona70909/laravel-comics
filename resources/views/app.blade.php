@@ -11,6 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-    @include('header.header');
+    @include('header.header')
 </body>
 </html>
