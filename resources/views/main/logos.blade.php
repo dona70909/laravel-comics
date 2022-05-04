@@ -8,7 +8,7 @@
                         <p>{{$logo["text"]}}</p>
                     </div>      
                 </li>
-            @endforeach
+            @endforeach 
         </ul>
     </div>
 </div>
