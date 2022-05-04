@@ -12,5 +12,6 @@
 </head>
 <body>
     @include('header.header')
+    @include('main.main')
 </body>
 </html>

@@ -17,5 +17,8 @@ Route::get('/', function () {
 
     $nav_links = config("header_nav");
     $header_nav_links = [ "links" => $nav_links];
-    return view('app',$header_nav_links);
+
+    $comics_cards = config("comics");
+    $cards = ["comics" => $comics_cards];
+    return view('app',$header_nav_links,$cards);
 });
