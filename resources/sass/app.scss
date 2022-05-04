@@ -1,4 +1,37 @@
 //
+/* commmon app */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    min-width: 1200px;
+}
+
+.padding{
+    padding: 0 8rem;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.position-relative{
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* //# header */
 .my-header-content{
     justify-content: space-between;
     padding-top:1rem;
