@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('app');
+
+    $nav_links = config("header_nav");
+    $header_nav_links = [ "links" => $nav_links];
+    return view('app',$header_nav_links);
 });

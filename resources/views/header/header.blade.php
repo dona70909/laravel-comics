@@ -5,7 +5,13 @@
     </div>
     <div class="my-header-nav">
         <ul class="d-flex my-link-list" >
-            
+            @foreach($links as $link_item)
+                <li class="my-link-item">
+                    <a href="{{$link_item["url"]}}">
+                        {{ $link_item["text"] }}
+                    </a>
+                </li>
+            @endforeach
         </ul>
     </div>
 </header>
