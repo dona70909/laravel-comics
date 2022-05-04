@@ -13,5 +13,6 @@
 <body>
     @include('header.header')
     @include('main.main')
+    @include('footer.footer')
 </body>
 </html>
