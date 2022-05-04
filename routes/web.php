@@ -26,3 +26,9 @@ Route::get('/', function () {
     $footer_social = config("social_nav");
     return view('app', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc, "nav_links" => $footer_nav_links,"footer_social_imgs" => $footer_social]);
 });
+
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name("characters");
+
