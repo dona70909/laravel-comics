@@ -292,3 +292,26 @@ a{
     }
 
 }
+
+/* //%main card */
+
+.card-description-box {
+    .banner-price {
+        background-color:#55ba59;
+        padding:.3rem 1rem;
+        font-size: .7rem;
+
+        .price-tag {
+            color: white;
+        }
+        h3,h4 {
+            margin: 0;
+        }
+        .box-check-available {
+            border-left: 1px solid black;
+            padding:0 .5rem;
+            color: white;
+            
+        }
+    }
+}

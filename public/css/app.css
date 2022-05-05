@@ -250,3 +250,21 @@ a {
   color: rgb(24, 123, 216);
   text-transform: uppercase;
 }
+
+/* //%main card */
+.card-description-box .banner-price {
+  background-color: #55ba59;
+  padding: 0.3rem 1rem;
+  font-size: 0.7rem;
+}
+.card-description-box .banner-price .price-tag {
+  color: white;
+}
+.card-description-box .banner-price h3, .card-description-box .banner-price h4 {
+  margin: 0;
+}
+.card-description-box .banner-price .box-check-available {
+  border-left: 1px solid black;
+  padding: 0 0.5rem;
+  color: white;
+}
