@@ -1,4 +1,4 @@
-<div class="my-main-content-menu padding">
+<div class="my-main-content-menu">
     <div class="my-main-nav">
         <ul class="d-flex my-link-list">
             @foreach ($logos_dc_main as $logo)

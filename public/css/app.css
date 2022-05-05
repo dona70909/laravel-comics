@@ -94,7 +94,10 @@ a {
   height: 80%;
   padding-bottom: 1rem;
 }
-.my-main-wrapper .main-content-cards .main-card p {
+.my-main-wrapper .main-content-cards .main-card a {
+  color: white;
+}
+.my-main-wrapper .main-content-cards .main-card a p {
   text-transform: uppercase;
   text-align: center;
 }
@@ -251,7 +254,35 @@ a {
   text-transform: uppercase;
 }
 
-/* //%main card */
+/* //% --------- MAIN CARD  ROUTE ------------*/
+/* //!!! logo main custom*/
+.card .my-main-nav {
+  padding-top: 0rem;
+}
+.card .my-main-content-menu {
+  background-color: rgb(255, 255, 255);
+  color: rgb(218, 218, 218);
+  border-top: 1px solid rgb(218, 218, 218);
+  padding-top: 0rem;
+  height: 100%;
+}
+.card .my-main-content-menu .my-link-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-left: 1px solid rgb(218, 218, 218);
+  padding: 0.3rem 0.5rem;
+}
+.card .my-main-content-menu .my-link-item .my-link-text-wrap {
+  color: rgb(218, 218, 218);
+  align-self: flex-start;
+}
+.card .my-main-content-menu .my-link-item img {
+  background-color: rgb(218, 218, 218);
+  align-self: flex-end;
+  width: 30px;
+}
+
 .card-description-box .banner-price {
   background-color: #55ba59;
   padding: 0.3rem 1rem;

@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('main-content')
+<section class="card">
     @include('partials.main.partials.jumbo') 
     <div class="container-fluid">
         <div class="row justify-content-center p-4">
@@ -69,4 +70,5 @@
     </div>
 
     @include('partials.main.partials.logos') 
+</section>
 @endsection
