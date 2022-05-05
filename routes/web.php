@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $comics_cards = config("comics");
+    $main_logos_dc = config("logos_dc");
+    return view('guest.cards',["comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
+})->name("cards");
+
+
+Route::get('/home', function () {
 
     $nav_links = config("header_nav");
     
@@ -30,11 +37,7 @@ Route::get('/characters', function () {
     return view('guest.characters');
 })->name("characters");
 
-Route::get('/cards', function () {
-    $comics_cards = config("comics");
-    $main_logos_dc = config("logos_dc");
-    return view('guest.cards',["comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
-})->name("cards");
+
 
 Route::get('/cards/{index}', function ($index) {
     $comics_cards = config("comics");

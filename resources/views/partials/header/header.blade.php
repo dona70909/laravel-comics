@@ -5,8 +5,15 @@
     </div>
     <div class="my-header-nav">
         <ul class="d-flex my-link-list">
+            
             <li class="my-link-item">
                 <a class="header-link" href="{{@url("/")}}">
+                    Comics Cards
+                </a>
+            </li>
+
+            <li class="my-link-item">
+                <a class="header-link" href="{{@url("/home")}}">
                     Home
                 </a>
             </li>
