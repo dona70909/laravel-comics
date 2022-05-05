@@ -22,7 +22,7 @@ Route::get('/', function () {
     $main_logos_dc = config("logos_dc");
 
 
-    return view('comics', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
+    return view('home', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
 });
 
 
