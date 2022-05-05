@@ -280,6 +280,15 @@ a{
 
 /* //!!! logo main custom*/
 .card {
+    .container-comic-cover {
+        top: 8rem;
+        left:10rem;   
+    }
+
+    .banner-blue {
+        height: 3rem;
+        background-color: rgb(2, 130, 249);
+    }
     .my-main-nav{
         padding-top:0rem;
     }
@@ -333,7 +342,7 @@ a{
 }
 
 .box-wrapper {
-
+    background-color: rgb(246, 246, 246) ;
     .talent-box{
 
         .box {

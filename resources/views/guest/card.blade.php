@@ -3,6 +3,12 @@
 @section('main-content')
 <section class="card">
     @include('partials.main.partials.jumbo') 
+    <div class="container-comic-cover position-absolute">
+        <img src="{{$comic["thumb"]}}" alt="sdakoj">
+    </div>
+    <div class="banner-blue">
+
+    </div>
     <div class="container-fluid">
         <div class="row justify-content-center p-4">
             

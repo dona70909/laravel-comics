@@ -238,6 +238,14 @@ a {
 
 /* //% --------- MAIN CARD  ROUTE ------------*/
 /* //!!! logo main custom*/
+.card .container-comic-cover {
+  top: 8rem;
+  left: 10rem;
+}
+.card .banner-blue {
+  height: 3rem;
+  background-color: rgb(2, 130, 249);
+}
 .card .my-main-nav {
   padding-top: 0rem;
 }
@@ -283,6 +291,7 @@ a {
 }
 
 .box-wrapper {
+  background-color: rgb(246, 246, 246);
   /* common */
 }
 .box-wrapper .talent-box .box {
