@@ -37,7 +37,8 @@ Route::get('/cards', function () {
 })->name("cards");
 
 Route::get('/card', function () {
-    return view('guest.card');
+    $comics_cards = config("comics");
+    return view('guest.card',["comics" => $comics_cards]);
 })->name("card");
 
 
