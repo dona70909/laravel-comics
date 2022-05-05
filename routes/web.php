@@ -17,12 +17,12 @@ Route::get('/', function () {
 
     $nav_links = config("header_nav");
     
-    //$comics_cards = config("comics");
+    $comics_cards = config("comics");
     
     $main_logos_dc = config("logos_dc");
 
 
-    return view('guest.home', ["links" => $nav_links,/* "comics" => $comics_cards */,"logos_dc_main" => $main_logos_dc]);
+    return view('guest.home', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
 });
 
 
@@ -32,7 +32,7 @@ Route::get('/characters', function () {
 
 Route::get('/card', function () {
     $comics_cards = config("comics");
-    return view('guest.cards',["comics" => $comics_cards]);
+    return view('guest.cards');
 })->name("cards");
 
 Route::get('/card', function () {
