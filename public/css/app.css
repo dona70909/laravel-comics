@@ -273,10 +273,12 @@ a {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 0.5rem 0;
+  justify-content: space-between;
 }
 .talent-box .talent-box-written {
   border-bottom: 1px solid black;
   padding: 0.5rem 0;
+  justify-content: space-between;
 }
 .talent-box h3 {
   color: rgb(77, 120, 141);
@@ -287,4 +289,8 @@ a {
 }
 .talent-box p {
   color: rgb(90, 171, 220);
+}
+
+.spec-box h3 {
+  color: rgb(77, 120, 141);
 }
