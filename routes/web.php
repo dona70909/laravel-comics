@@ -22,17 +22,17 @@ Route::get('/', function () {
     $main_logos_dc = config("logos_dc");
 
 
-    return view('home', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
+    return view('guest.home', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
 });
 
 
 Route::get('/characters', function () {
-    return view('characters');
+    return view('guest.characters');
 })->name("characters");
 
 Route::get('/card', function () {
     
-    return view('card');
+    return view('guest.card');
 })->name("card");
 
 
