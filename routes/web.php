@@ -30,9 +30,10 @@ Route::get('/characters', function () {
     return view('guest.characters');
 })->name("characters");
 
-Route::get('/card', function () {
+Route::get('/cards', function () {
     $comics_cards = config("comics");
-    return view('guest.cards');
+    $main_logos_dc = config("logos_dc");
+    return view('guest.cards',["comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
 })->name("cards");
 
 Route::get('/card', function () {

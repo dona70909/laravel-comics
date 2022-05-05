@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('main-content')
+    @include('partials.main.partials.jumbo') 
     <div class="my-main-wrapper position-relative">
 
         <div class="box-current-series">
@@ -22,4 +23,5 @@
             <button class="load-more-btn"><a href="#">Load more</a></button>
         </div>
     </div>
+    @include('partials.main.partials.logos') 
 @endsection

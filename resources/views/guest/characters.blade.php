@@ -1,5 +1,5 @@
 @extends('layout.app')
 
-{{-- @section('main-content')
-    <h1>Hello world!!</h1>
-@endsection --}}
+@section('main-content')
+    @include('partials.main.partials.jumbo') 
+@endsection 
