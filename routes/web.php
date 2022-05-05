@@ -41,8 +41,9 @@ Route::get('/characters', function () {
 
 Route::get('/cards/{index}', function ($index) {
     $comics_cards = config("comics");
+    $main_logos_dc = config("logos_dc");
     if( is_numeric($index) && $index >= 0 && $index < count($comics_cards)){
-        return view('guest.card',["comic" => $comics_cards[$index]]);
+        return view('guest.card',["comic" => $comics_cards[$index],"logos_dc_main" => $main_logos_dc]);
     } 
 })->name("card");
 

@@ -23,12 +23,12 @@
             
         </div>
 
-        <div class="row talent-box justify-content-center p-4">
-            <div class="col-5 ">
-
+        <div class="row box-wrapper justify-content-center p-4">
+            <div class="col-5 talent-box">
+                
                 <h3>Talent</h3>
 
-                <div class="d-flex talent-box-art">
+                <div class="d-flex box talent-box-art">
                     <h4 class="me-4 flex-none">Art by:</h4>
                     <p>
                         @foreach($comic["artists"] as $artist)
@@ -37,7 +37,7 @@
                     </p> 
                 </div>
 
-                <div class="d-flex talent-box-written">
+                <div class="d-flex box talent-box-written">
                     <h4 class="me-4 flex-none">Written by:</h4>
                     <p>
                         @foreach($comic["writers"] as $writer)
@@ -50,10 +50,23 @@
             <div class="col-5  spec-box">
                 <h3>Spec</h3>
                 <div class="spec-box-series">
-                    <h4 class="text-uppercase">Series: {{$comic["series"]}}</h4>
+                    <div class="d-flex justify-content-between box">
+                        <h6>Series:</h6>
+                        <h4 class="text-uppercase">{{$comic["series"]}}</h4>
+                    </div>
+                    <div class="d-flex justify-content-between box">
+                        <h6>U.S Price:</h6>
+                        <p class="text-uppercase">{{$comic["price"]}}</p>
+                    </div>
+                    <div class="d-flex justify-content-between last-box">
+                        <h6>Series:</h6>
+                        <p class="text-uppercase">{{$comic["sale_date"]}}</p>
+                    </div>
                 </div>
             </div>
             
         </div>
     </div>
+
+    @include('partials.main.partials.logos') 
 @endsection

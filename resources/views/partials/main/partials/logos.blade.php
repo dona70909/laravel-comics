@@ -3,7 +3,7 @@
         <ul class="d-flex my-link-list">
             @foreach ($logos_dc_main as $logo)
                 <li class="my-link-item d-flex">
-                    <img src="img/{{$logo["image"]}}" />
+                    <img src="{{asset('img/'.$logo["image"])}}" />
                     <div class="my-link-text-wrap">
                         <p>{{$logo["text"]}}</p>
                     </div>      

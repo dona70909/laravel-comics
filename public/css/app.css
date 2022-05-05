@@ -269,28 +269,37 @@ a {
   color: white;
 }
 
-.talent-box .talent-box-art {
+.box-wrapper {
+  /* common */
+}
+.box-wrapper .talent-box .box {
+  border-bottom: 1px solid black;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+.box-wrapper .talent-box .talent-box-art {
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 0.5rem 0;
-  justify-content: space-between;
 }
-.talent-box .talent-box-written {
-  border-bottom: 1px solid black;
-  padding: 0.5rem 0;
-  justify-content: space-between;
-}
-.talent-box h3 {
-  color: rgb(77, 120, 141);
-}
-.talent-box h4 {
-  color: rgb(43, 100, 139);
-  flex: none;
-}
-.talent-box p {
+.box-wrapper .talent-box p {
   color: rgb(90, 171, 220);
 }
-
-.spec-box h3 {
+.box-wrapper .spec-box h6 {
+  flex: none;
+  color: rgb(43, 100, 139);
+}
+.box-wrapper .spec-box .box {
+  border-top: 1px solid black;
+  padding: 0.6rem 0;
+}
+.box-wrapper .spec-box .last-box {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.6rem 0;
+}
+.box-wrapper h3 {
   color: rgb(77, 120, 141);
+}
+.box-wrapper h4 {
+  color: rgb(43, 100, 139);
+  flex: none;
 }

@@ -316,20 +316,45 @@ a{
     }
 }
 
-.talent-box {
+.box-wrapper {
 
-    .talent-box-art {
-        border-top:1px solid black;
-        border-bottom:1px solid black;
-        padding: .5rem 0;
-        justify-content: space-between;
+    .talent-box{
+
+        .box {
+            border-bottom:1px solid black;
+            padding: .5rem 0;
+            justify-content: space-between;
+        }
+        .talent-box-art {
+            border-top:1px solid black;  
+        }
+
+        p {
+            color:rgb(90, 171, 220);
+        }
+    
     }
 
-    .talent-box-written {
-        border-bottom:1px solid black;
-        padding: .5rem 0;
-        justify-content: space-between;
+    .spec-box {
+
+        h6 {
+            flex:none;
+            color:rgb(43, 100, 139); 
+        }
+        .box{
+            border-top:1px solid black;
+            padding:.6rem 0;
+        }
+
+        .last-box {
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+            padding:.6rem 0;
+        }
     }
+
+
+    /* common */
 
     h3 {
         color: rgb(77, 120, 141);
@@ -340,14 +365,8 @@ a{
         flex: none;
     }
 
-    p {
-        color:rgb(90, 171, 220);
-    }
+
+
 }
 
 
-.spec-box {
-    h3 {
-        color: rgb(77, 120, 141);
-    }
-}
