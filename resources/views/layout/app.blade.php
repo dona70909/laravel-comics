@@ -12,7 +12,11 @@
 </head>
 <body>
     @include('partials.header.header',["nav_links_header" => config("header_nav")])
-    @include('partials.main.main')
+    {{-- @include('partials.main.main') --}}
+    {{-- creo main perchè cambia in guest cards  --}}
+    <main>
+        @yield('main-content')
+    </main>
     @include('partials.footer.footer')
 </body>
 </html>
