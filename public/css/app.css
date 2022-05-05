@@ -237,6 +237,12 @@ a {
 }
 
 /* //% --------- MAIN CARD  ROUTE ------------*/
+header div.banner-blue {
+  height: 1rem;
+  background-color: rgb(2, 130, 249);
+  margin-bottom: 2rem;
+}
+
 /* //!!! logo main custom*/
 .card .container-comic-cover {
   top: 8rem;

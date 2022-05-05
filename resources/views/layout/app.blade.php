@@ -11,11 +11,12 @@
     <title>Dc Comics</title>
 </head>
 <body>
-    @include('partials.header.header',["nav_links_header" => config("header_nav")])
     
-    <main>
-        @yield('main-content')
-    </main>
+    <header>
+        @include('partials.header.header',["nav_links_header" => config("header_nav")])
+    </header>
+    
+    @include('partials.main.main')
     @include('partials.footer.footer')
 </body>
 </html>

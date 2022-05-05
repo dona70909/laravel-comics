@@ -1,5 +1,12 @@
 @extends('layout.app')
 
+
+@section('header-content')
+    <div class="banner-blue">
+    </div> 
+    @include('partials.header.header_nav',["nav_links_header" => config("header_nav")]) 
+@endsection
+
 @section('main-content')
 <section class="card">
     @include('partials.main.partials.jumbo') 
