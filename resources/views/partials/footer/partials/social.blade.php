@@ -9,7 +9,7 @@
         <ul class="d-flex">
             @foreach($footer_social_imgs as $img)
                 <li>
-                    <img src="img/{{$img}}" alt="img socail">
+                    <img src="{{asset("img/$img")}}" alt="img socail">
                 </li>
             @endforeach
         </ul>
