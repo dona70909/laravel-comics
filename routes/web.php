@@ -21,20 +21,19 @@ Route::get('/', function () {
     
     $main_logos_dc = config("logos_dc");
 
-    $footer_nav_links = config("footer_nav");
 
-    $footer_social = config("social_nav");
-    return view('app', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc, "nav_links" => $footer_nav_links,"footer_social_imgs" => $footer_social]);
+    return view('comics', ["links" => $nav_links,"comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
 });
 
 
 Route::get('/characters', function () {
-    $nav_links = config("header_nav");
-    return view('characters',["links" => $nav_links]);
+    return view('characters');
 })->name("characters");
 
 Route::get('/card', function () {
     
     return view('card');
 })->name("card");
+
+
 

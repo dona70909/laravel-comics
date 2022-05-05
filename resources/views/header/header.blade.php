@@ -10,7 +10,7 @@
                     Home
                 </a>
             </li>
-            @foreach($links as $link_item)
+            @foreach($nav_links_header as $link_item)
                 @if ($loop->first)
                     <li class="my-link-item">
                         <a class="header-link" href="{{@route("characters")}}">
