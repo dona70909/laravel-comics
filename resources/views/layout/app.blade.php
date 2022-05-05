@@ -11,8 +11,8 @@
     <title>Dc Comics</title>
 </head>
 <body>
-    @include('header.header',["nav_links_header" => config("header_nav")])
-    @include('main.main')
-    @include('footer.footer')
+    @include('partials.header.header',["nav_links_header" => config("header_nav")])
+    @include('partials.main.main')
+    @include('partials.footer.footer')
 </body>
 </html>
