@@ -268,3 +268,23 @@ a {
   padding: 0 0.5rem;
   color: white;
 }
+
+.talent-box .talent-box-art {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.5rem 0;
+}
+.talent-box .talent-box-written {
+  border-bottom: 1px solid black;
+  padding: 0.5rem 0;
+}
+.talent-box h3 {
+  color: rgb(77, 120, 141);
+}
+.talent-box h4 {
+  color: rgb(43, 100, 139);
+  flex: none;
+}
+.talent-box p {
+  color: rgb(90, 171, 220);
+}

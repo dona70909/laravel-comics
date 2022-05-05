@@ -315,3 +315,32 @@ a{
         }
     }
 }
+
+.talent-box {
+
+    .talent-box-art {
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+        padding: .5rem 0;
+    }
+
+    .talent-box-written {
+        border-bottom:1px solid black;
+        padding: .5rem 0;
+
+        
+    }
+
+    h3 {
+        color: rgb(77, 120, 141);
+    }
+
+    h4{
+        color: rgb(43, 100, 139);
+        flex: none;
+    }
+
+    p {
+        color:rgb(90, 171, 220);
+    }
+}
