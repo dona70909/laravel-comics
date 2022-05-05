@@ -1,6 +1,6 @@
 @extends('layout.app')
 
 @section('main-content')
-    
-    @dump($comics) 
+    @include('partials.main.partials.jumbo') 
+    <p>{{$comic["price"]}}</p>
 @endsection

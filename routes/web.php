@@ -36,9 +36,11 @@ Route::get('/cards', function () {
     return view('guest.cards',["comics" => $comics_cards,"logos_dc_main" => $main_logos_dc]);
 })->name("cards");
 
-Route::get('/card', function () {
+Route::get('/cards/{index}', function ($index) {
     $comics_cards = config("comics");
-    return view('guest.card',["comics" => $comics_cards]);
+    if( is_numeric($index) && $index >= 0 && $index < count($comics_cards)){
+        return view('guest.card',["comic" => $comics_cards[$index]]);
+    } 
 })->name("card");
 
 
