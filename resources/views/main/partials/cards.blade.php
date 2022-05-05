@@ -8,7 +8,9 @@
         @foreach($comics as $comic)
             <div class="main-card">
                 <img src="{{$comic["thumb"]}}" alt="{{$comic["series"]}}">
-                <p>{{$comic["series"]}}</p> 
+                <a  href="{{route('card')}}">
+                    <p>{{$comic["series"]}}</p>
+                </a> 
             </div>
         @endforeach
     </div>

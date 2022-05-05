@@ -33,3 +33,8 @@ Route::get('/characters', function () {
     return view('characters',["links" => $nav_links]);
 })->name("characters");
 
+Route::get('/card', function () {
+    
+    return view('card');
+})->name("card");
+
